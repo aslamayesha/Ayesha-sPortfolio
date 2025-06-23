@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header className="bg-transparent w-full py-6">
+    <header className="sticky top-0 z-50 w-full py-6 bg-black/80 backdrop-blur-md shadow-lg">
       <div className="container mx-auto px-8 flex items-center justify-between">
         <div className="text-white text-2xl font-extrabold tracking-widest">AYESHA</div>
         <nav>
