@@ -16,10 +16,10 @@ export default function AboutSection() {
             <span className="animate-pulse-slow">Designs With Vision.</span>
           </h2>
           <p className="text-gray-400 max-w-md animate-fade-in animate-delay-4 hover-lift">
-            I'm a developer who thrives on coding and problem-solving. There's nothing more
-            fulfilling than creating software—it's where I feel truly alive. So, what made me take
-            on the unexpected challenge of learning design? We've all heard it before—developers
-            can't design. Or can they? And more importantly, should they?
+            I&apos;m a developer who thrives on coding and problem-solving. There&apos;s nothing more
+            fulfilling than creating software—it&apos;s where I feel truly alive. So, what made me take
+            on the unexpected challenge of learning design? We&apos;ve all heard it before—developers
+            can&apos;t design. Or can they? And more importantly, should they?
           </p>
         </div>
 

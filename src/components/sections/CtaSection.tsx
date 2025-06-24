@@ -15,7 +15,7 @@ export default function CtaSection() {
 
         {/* Description */}
         <p className="text-gray-400 max-w-2xl mx-auto mb-12 animate-fade-in animate-delay-1">
-          Let's work together to bring your ideas to life. I'm here to help you create something
+          Let&apos;s work together to bring your ideas to life. I&apos;m here to help you create something
           amazing that your users will love.
         </p>
 

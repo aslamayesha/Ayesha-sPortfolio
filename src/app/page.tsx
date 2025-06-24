@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useEffect } from 'react';
 import HeroSection from '@/components/sections/HeroSection';
 import AboutSection from '@/components/sections/AboutSection';

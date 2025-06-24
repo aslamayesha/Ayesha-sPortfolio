@@ -50,7 +50,7 @@ export default function HeroSection() {
             />
           </div>
           <p className="text-white text-center md:text-right mt-6 max-w-xs text-xs animate-slide-in-right animate-delay-3 px-4 md:px-0 md:mr-8 md:w-[170px]">
-            Hey, I'm <span className="font-bold">AYESHA</span> your GO TO creative developer,
+            Hey, I&apos;m <span className="font-bold">AYESHA</span> your GO TO creative developer,
             welcome to my personal portfolio.
           </p>
         </div>
