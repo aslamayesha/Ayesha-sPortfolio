@@ -21,7 +21,7 @@ export default function CtaSection() {
 
         {/* CTA Button */}
         <button className="bg-[#6f64f3] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#5a52d4] transition-colors text-lg animate-scale-in animate-delay-2 hover-lift hover-glow">
-          Let's Talk
+          Let&apos;s Talk
         </button>
       </div>
     </section>

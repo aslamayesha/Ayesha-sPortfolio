@@ -9,7 +9,7 @@ export default function HeroSection() {
             className="text-[clamp(2.5rem,8vw,6rem)] leading-tight text-[#6f64f3] font-anton font-extrabold uppercase mb-4 animate-fade-in"
             style={{ fontFamily: 'Anton, sans-serif' }}
           >
-            LET'S BUILD THE <br /> FUTURE TOGETHER
+            LET&apos;S BUILD THE <br /> FUTURE TOGETHER
           </h1>
           <svg
             width="636"

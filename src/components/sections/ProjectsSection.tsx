@@ -111,7 +111,7 @@ export default function ProjectsSection() {
           <span className="animate-pulse-slow">Featured</span> Projects
         </h2>
         <p className="text-gray-400 text-left max-w-2xl mb-12 animate-fade-in animate-delay-1 hover-lift">
-          Here are some of the projects I'm most proud of. Each one was a unique challenge that
+          Here are some of the projects I am most proud of. Each one was a unique challenge that
           helped me grow as a developer.
         </p>
 

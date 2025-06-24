@@ -9,12 +9,6 @@ const ServiceItem = ({ children }: { children: React.ReactNode }) => (
   </h3>
 );
 
-const decorativeTextStyle: React.CSSProperties = {
-  fontFamily: 'Anton, sans-serif',
-  WebkitTextStroke: '2px rgba(255, 255, 255, 0.5)',
-  color: 'transparent',
-};
-
 export default function ServicesSection() {
   return (
     <section id="services" className="bg-[#6155E1] w-full h-full flex items-center relative overflow-hidden">
