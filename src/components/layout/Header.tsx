@@ -4,11 +4,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full py-6 bg-black/80 backdrop-blur-md shadow-lg">
       <div className="container mx-auto px-8 flex items-center justify-between">
-        <div className="text-white text-2xl font-extrabold tracking-widest">AYESHA</div>
+        <div className="text-white text-[40px] font-medium font-[Anton] tracking-widest">AYESHA</div>
         <nav>
-          <ul className="flex space-x-8 text-white text-xs uppercase tracking-wider font-semibold">
+          <ul className="flex space-x-8 text-white text-[16px] uppercase tracking-wider font-medium font-[Anton]">
             <li>
-              <a href="#contact" className="hover:text-[#6c63ff] transition-colors">
+              <a href="#contact" className="hover:text-[#6c63ff] transition-colors ">
                 Contact
               </a>
             </li>

@@ -6,16 +6,16 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 md:px-8 lg:px-24 flex flex-col md:flex-row items-center justify-between gap-16">
         {/* Left Column */}
         <div className="flex-1 animate-slide-in-left">
-          <p className="text-gray-400 uppercase tracking-widest mb-2 animate-fade-in animate-delay-1 hover-glow">About</p>
-          <p className="text-white uppercase font-semibold text-lg mb-4 animate-fade-in animate-delay-2 hover-scale">Code Meets Creativity</p>
+          <p className="text-[#62606F] font-[Anton] text-[40px] uppercase mb-4 animate-fade-in animate-delay-1 hover-glow">About</p>
+          <p className="text-white font-[Anton] text-[40px] uppercase font-medium  animate-fade-in animate-delay-2 hover-scale">Code Meets Creativity</p>
           <h2
-            className="text-white font-anton text-[clamp(2rem,6vw,4rem)] leading-tight uppercase font-extrabold mb-6 animate-fade-in animate-delay-3 hover-glow"
+            className="text-white text-[80px] leading-[1.1] uppercase font-medium mb-6 animate-fade-in animate-delay-3 hover-glow"
             style={{ fontFamily: 'Anton, sans-serif' }}
           >
             A Developer Who <br />
             <span className="animate-pulse-slow">Designs With Vision.</span>
           </h2>
-          <p className="text-gray-400 max-w-md animate-fade-in animate-delay-4 hover-lift">
+          <p className="text-[#FFFFFF] max-w-md animate-fade-in animate-delay-4 hover-lift font-[Manrope] text-[16px] font-medium">
             I&apos;m a developer who thrives on coding and problem-solving. There&apos;s nothing more
             fulfilling than creating software—it&apos;s where I feel truly alive. So, what made me take
             on the unexpected challenge of learning design? We&apos;ve all heard it before—developers
