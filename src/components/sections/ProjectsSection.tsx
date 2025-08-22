@@ -6,28 +6,36 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
+    title: 'Audit Ally: AI-Driven Financial Advisor',
     description:
-      'A full-featured e-commerce site with a modern UI, product catalog, and a seamless checkout process built to scale.',
-    image: '/project-placeholder-1.png',
+      'Audit Ally — an AI-powered platform delivering real-time earnings-call analysis, transcripts, sentiment tracking, and scoring to help investors make faster, smarter, and more confident decisions.',
+    image: '/audit.png',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
-    link: '#',
+    link: 'https://www.audit-ally.com/',
   },
   {
-    title: 'AI-Powered Content Generator',
+    title: 'Unation.com: A go-to app for finding the best things to do across the USA',
     description:
-      'A SaaS application that leverages AI to help creators generate high-quality content for their blogs and social media.',
-    image: '/project-placeholder-2.png',
-    tags: ['React', 'Node.js', 'GraphQL', 'OpenAI'],
-    link: '#',
+      'Austin: 1-Hour Haunted Walking Tour — experience spine-chilling ghost stories while exploring Austin’s haunted history on a guided hour-long walk through the heart of downtown.',
+    image: '/nation.png',
+    tags: ['Nextjs', 'Node.js', 'Redux', 'Material UI'],
+    link: 'https://www.unation.com/',
   },
   {
-    title: 'Interactive Data Dashboard',
+    title: 'Tresal: A Go-To Attack Surface Management Platform',
     description:
-      'A complex data visualization dashboard for a fintech company, providing real-time insights into market trends.',
-    image: '/project-placeholder-3.png',
+      'Tresal — a European-first unified security platform that automatically discovers and continuously monitors your external and cloud-based attack surface with risk-prioritized insights, all designed for lean teams.',
+    image: '/tresal.png',
     tags: ['React', 'D3.js', 'WebSocket', 'Framer Motion'],
-    link: '#',
+    link: 'https://www.tresal.eu/',
+  },
+  {
+    title: 'Conch.ai: AI Writing That is Undetectable',
+    description:
+      'Conch AI — an all-in-one academic assistant that helps you write, cite, study, and humanize AI-generated text that stays undetectable by tools like GPTZero or Turnitin.',
+    image: '/conch.png',
+    tags: ['Nextjs', 'TypeScript', 'Postgres', 'OpenAI'],
+    link: 'https://www.getconch.ai/',
   },
 ];
 
@@ -54,7 +62,7 @@ const ProjectCard = ({ title, description, image, tags, link }: (typeof projects
           </span>
         ))}
       </div>
-      <a href={link} className="text-[#6155E1] font-semibold hover:underline self-start hover-glow group-hover:text-[#6f64f3] transition-all duration-300 flex items-center gap-2">
+      <a href={link} className="text-[#6155E1] no-underline font-semibold  self-start hover-glow group-hover:text-[#6f64f3] hover:rounded-[7px] hover:px-[8px] transition-all duration-300 flex items-center gap-2">
         View Project 
         <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
       </a>

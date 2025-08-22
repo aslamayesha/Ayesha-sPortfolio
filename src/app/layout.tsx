@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import DownloadCVButton from '@/components/DownloadCVButton';
 import StickyProfile from '@/components/layout/StickyProfile';
 
 const geistSans = Geist({
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <DownloadCVButton />
         <StickyProfile />
       </body>
     </html>
