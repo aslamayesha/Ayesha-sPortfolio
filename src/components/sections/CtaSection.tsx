@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CtaSection() {
   return (
-    <section id="cta" className="bg-[#000000] w-full h-full flex items-center">
+    <section id="cta" className="bg-[#0a0a0a] w-full h-full flex items-center">
       <div className="container mx-auto px-8 text-center">
         <div className="flex sm:text-left justify-between items-center">
           <h1 className="text-white font-[Anton] text-[144px] font-medium uppercase leading-[1]">
