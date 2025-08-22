@@ -35,7 +35,7 @@ export default function HeroSection() {
         <div className="flex-1 flex flex-col items-center md:items-end justify-center md:justify-start mt-8 md:mt-0">
           <div className="relative flex flex-col items-center">
             <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-0 animate-rotate-slow">
-              <svg width="220" height="220" viewBox="0 0 220 220" fill="none" className="w-32 h-32 md:w-auto md:h-auto">
+              <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
                 <path d="M110 0C170.914 0 220 49.086 220 110" stroke="#6f64f3" strokeWidth="2" />
                 <path d="M110 20C156.564 20 200 63.436 200 110" stroke="#6f64f3" strokeWidth="2" />
                 <path d="M110 40C142.214 40 170 67.786 170 110" stroke="#6f64f3" strokeWidth="2" />
@@ -46,13 +46,9 @@ export default function HeroSection() {
               alt="Ayesha profile"
               width={224}
               height={224}
-              className="relative z-10 w-40 h-40 md:w-56 md:h-56 object-cover rounded-b-full shadow-lg hover-scale"
+              className="relative z-10 w-40 h-40 md:w-56 md:h-56 object-cover rounded-b-full shadow-lg hover-scale animate-float"
             />
           </div>
-          <p className="text-white text-center md:text-right mt-6 max-w-xs text-xs animate-slide-in-right animate-delay-3 px-4 md:px-0 md:mr-8 md:w-[170px]">
-            Hey, I&apos;m <span className="font-bold">AYESHA</span> your GO TO creative developer,
-            welcome to my personal portfolio.
-          </p>
         </div>
       </div>
     </section>

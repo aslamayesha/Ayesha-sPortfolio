@@ -14,7 +14,7 @@ const StatItem = ({ number, label }: { number: string; label: string }) => (
 
 export default function InNumbersSection() {
   return (
-    <section id="in-numbers" className="bg-[#000000] w-full h-full flex items-center">
+    <section id="in-numbers" className="bg-[#0a0a0a] w-full h-full flex items-center">
       <div className="container mx-auto px-8">
         <div className="border-t border-gray-700 pt-16">
           <h2

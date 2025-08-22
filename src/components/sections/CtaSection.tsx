@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CtaSection() {
   return (
-    <section id="cta" className="bg-[#000000] w-full h-full flex items-center">
+    <section id="cta" className="bg-[#0a0a0a] w-full h-full flex items-center">
       <div className="container mx-auto px-8 text-center">
         {/* Headline */}
         <h2
