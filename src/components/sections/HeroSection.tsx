@@ -1,7 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function HeroSection() {
-
   return (
     <section className="bg-transparent w-full h-full flex items-center">
       <div className="container px-4 md:px-8 lg:px-24 mx-auto min-h-[60vh] flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-8 md:gap-0">
@@ -9,10 +8,28 @@ export default function HeroSection() {
         <div className="flex-1 flex flex-col items-center md:items-end justify-center md:justify-start mt-8 md:mt-0 order-1 md:order-2">
           <div className="relative flex flex-col items-center">
             <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-0 animate-rotate-slow">
-              <svg width="220" height="220" viewBox="0 0 220 220" fill="none" className="w-32 h-32 md:w-auto md:h-auto">
-                <path d="M110 0C170.914 0 220 49.086 220 110" stroke="#6f64f3" strokeWidth="2" />
-                <path d="M110 20C156.564 20 200 63.436 200 110" stroke="#6f64f3" strokeWidth="2" />
-                <path d="M110 40C142.214 40 170 67.786 170 110" stroke="#6f64f3" strokeWidth="2" />
+              <svg
+                width="220"
+                height="220"
+                viewBox="0 0 220 220"
+                fill="none"
+                className="w-32 h-32 md:w-auto md:h-auto"
+              >
+                <path
+                  d="M110 0C170.914 0 220 49.086 220 110"
+                  stroke="#6f64f3"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M110 20C156.564 20 200 63.436 200 110"
+                  stroke="#6f64f3"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M110 40C142.214 40 170 67.786 170 110"
+                  stroke="#6f64f3"
+                  strokeWidth="2"
+                />
               </svg>
             </div>
             <Image
@@ -23,16 +40,19 @@ export default function HeroSection() {
               className="relative z-10 w-40 h-40 md:w-56 md:h-56 object-cover rounded-b-full shadow-lg hover-scale"
             />
           </div>
-          <p className="text-white font-[Manrope] text-[16px] font-semibold ml-0  text-center md:text-right mt-6 max-w-xs animate-slide-in-right animate-delay-3 px-4 md:px-0 md:mr-8 md:w-[170px]" style={{ width: '228px', marginRight : "0px", textAlign : "center" }}>
-            Hey, I&apos;m AYESHA your GO TO creative developer,
-            welcome to my personal portfolio.
+          <p
+            className="text-white font-[Manrope] text-[16px] font-semibold ml-0  text-center md:text-right mt-6 max-w-xs animate-slide-in-right animate-delay-3 px-4 md:px-0 md:mr-8 md:w-[170px]"
+            style={{ width: "228px", marginRight: "0px", textAlign: "center" }}
+          >
+            Hey, I&apos;m AYESHA your GO TO creative developer, welcome to my
+            personal portfolio.
           </p>
         </div>
-        
+
         <div className="flex-1 flex flex-col items-center md:items-start justify-center max-w-2xl text-center md:text-left order-2 md:order-1">
           <h1
             className="text-[144px] w-[138%] sm:text-[90px] md:text-[100px] lg:text-[144px] leading-[1.1] text-[#6f64f3] font-extrabold uppercase mb-4 animate-fade-in"
-            style={{ fontFamily: 'Anton, sans-serif' }}
+            style={{ fontFamily: "Anton, sans-serif" }}
           >
             LET&apos;S BUILD THE <br /> FUTURE TOGETHER
           </h1>
@@ -52,28 +72,12 @@ export default function HeroSection() {
             />
           </svg>
 
-                     <button className="bg-white cursor-pointer text-[#6c63ff] mt-6 md:mt-10 font-bold p-[25px] rounded-full shadow hover:bg-[#6c63ff] hover:text-white transition-all duration-300 text-base animate-scale-in animate-delay-2 hover-lift hover-glow animate-pulse-slow group relative overflow-hidden">
-             <span className="relative z-10 font-[Anton] text-[20px] font-medium group-hover:scale-110 transition-transform duration-300">HIRE ME NOW</span>
-             <div className="absolute inset-0 bg-gradient-to-r from-[#6f64f3] to-[#6155E1] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
-           </button>
-         </div>
-        <div className="flex-1 flex flex-col items-center md:items-end justify-center md:justify-start mt-8 md:mt-0">
-          <div className="relative flex flex-col items-center">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-0 animate-rotate-slow">
-              <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
-                <path d="M110 0C170.914 0 220 49.086 220 110" stroke="#6f64f3" strokeWidth="2" />
-                <path d="M110 20C156.564 20 200 63.436 200 110" stroke="#6f64f3" strokeWidth="2" />
-                <path d="M110 40C142.214 40 170 67.786 170 110" stroke="#6f64f3" strokeWidth="2" />
-              </svg>
-            </div>
-            <Image
-              src="/Ayesha.png"
-              alt="Ayesha profile"
-              width={224}
-              height={224}
-              className="relative z-10 w-40 h-40 md:w-56 md:h-56 object-cover rounded-b-full shadow-lg hover-scale animate-float"
-            />
-          </div>
+          <button className="bg-white cursor-pointer text-[#6c63ff] mt-6 md:mt-10 font-bold p-[25px] rounded-full shadow hover:bg-[#6c63ff] hover:text-white transition-all duration-300 text-base animate-scale-in animate-delay-2 hover-lift hover-glow animate-pulse-slow group relative overflow-hidden">
+            <span className="relative z-10 font-[Anton] text-[20px] font-medium group-hover:scale-110 transition-transform duration-300">
+              HIRE ME NOW
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#6f64f3] to-[#6155E1] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+          </button>
         </div>
       </div>
     </section>
