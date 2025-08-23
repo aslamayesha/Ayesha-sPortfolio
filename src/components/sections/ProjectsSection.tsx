@@ -111,7 +111,7 @@ export default function ProjectsSection() {
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
   return (
-    <section id="projects" className="bg-[#0a0a0a] w-full h-full flex items-center">
+    <section id="project" className="bg-[#0a0a0a] w-full h-full flex items-center">
       <div className="container mx-auto px-4 md:px-8 lg:px-24">
         <h2 className="text-white font-anton text-[clamp(2rem,6vw,4rem)] leading-tight uppercase font-extrabold mb-6 animate-fade-in hover-glow"
         style={{ fontFamily: 'Anton, sans-serif' }}

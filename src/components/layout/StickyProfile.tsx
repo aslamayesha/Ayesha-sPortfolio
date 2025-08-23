@@ -19,6 +19,16 @@ export default function StickyProfile() {
     setShowThoughtCloud(false);
   };
 
+  const resumeClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.href = '/AyeshaAslam-resume.pdf';
+    link.download = 'AyeshaAslam_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
       {/* Thought cloud */}
@@ -59,7 +69,7 @@ export default function StickyProfile() {
         </div>
       )}
       {/* Sticky profile image */}
-      <div className="relative group">
+      <div onClick={resumeClick} className="relative cursor-pointer group">
         <Image
           src="/Ayesha.png"
           alt="Ayesha profile"
