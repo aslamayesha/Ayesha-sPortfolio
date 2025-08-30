@@ -48,9 +48,9 @@ export default function Home() {
         <div className="section-wrapper">
           <AboutSection />
         </div>
-        <div className="section-wrapper">
+        {/* <div className="section-wrapper">
           <SkillsSection />
-        </div>
+        </div> */}
         <div className="section-wrapper">
           <ProjectsSection />
         </div>

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 
 const GitHubIcon = () => (
@@ -55,6 +56,13 @@ const LinkedInIcon = () => (
 );
 
 export default function Footer() {
+
+
+  const handleGmailClick = () => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=aslamayesha799@gmail.com"
+    );
+  }
   return (
     <footer className="bg-transparent py-12">
       <div className="container mx-auto px-8">
@@ -64,18 +72,18 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/aslamayesha"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
             >
               <GitHubIcon />
             </a>
-            <a href="mailto:example@gmail.com" className="group">
+            <div onClick={handleGmailClick} className="group cursor-pointer">
               <GmailIcon />
-            </a>
+            </div>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ayesha-aslam-000760176/"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -84,6 +92,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <p className='text-gray-500 text-sm text-center md:text-left'><b>Phone No.</b>  +923034173632</p>
       </div>
     </footer>
   );

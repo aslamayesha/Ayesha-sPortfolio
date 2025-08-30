@@ -1,9 +1,16 @@
 import Image from "next/image";
 
 export default function HeroSection() {
+
+  const handleGmailClick = () => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=aslamayesha799@gmail.com"
+    );
+  }
+
   return (
     <section className="bg-transparent w-full h-full flex items-center">
-      <div className="container px-4 md:px-8 lg:px-24 mx-auto min-h-[60vh] flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-8 md:gap-0">
+      <div className="container px-4 md:px-0 lg:px-8 mx-auto min-h-[60vh] flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between gap-8 md:gap-0">
         {/* Mobile: Image and description first, then h1 */}
         <div className="flex-1 flex flex-col items-center md:items-end justify-center md:justify-start mt-8 md:mt-0 order-1 md:order-2">
           <div className="relative flex flex-col items-center">
@@ -41,7 +48,7 @@ export default function HeroSection() {
             />
           </div>
           <p
-            className="text-white font-[Manrope] text-[16px] font-semibold ml-0  text-center md:text-right mt-6 max-w-xs animate-slide-in-right animate-delay-3 px-4 md:px-0 md:mr-8 md:w-[170px]"
+            className="text-white font-sans text-[16px] font-light ml-0  text-center md:text-right mt-6 max-w-xs animate-slide-in-right animate-delay-3 px-4 md:px-0 md:mr-8 md:w-[170px]"
             style={{ width: "228px", marginRight: "0px", textAlign: "center" }}
           >
             Hey, I&apos;m AYESHA your GO TO creative developer, welcome to my
@@ -51,7 +58,7 @@ export default function HeroSection() {
 
         <div className="flex-1 flex flex-col items-center md:items-start justify-center max-w-2xl text-center md:text-left order-2 md:order-1">
           <h1
-            className="text-[144px] w-[138%] sm:text-[90px] md:text-[100px] lg:text-[144px] leading-[1.1] text-[#6f64f3] font-extrabold uppercase mb-4 animate-fade-in"
+            className="text-[100px] md:text-[144px] w-[138%] sm:text-[90px] lg:text-[144px] leading-[1.1] text-[#6f64f3] font-extrabold uppercase mb-4 animate-fade-in"
             style={{ fontFamily: "Anton, sans-serif" }}
           >
             LET&apos;S BUILD THE <br /> FUTURE TOGETHER
@@ -72,7 +79,7 @@ export default function HeroSection() {
             />
           </svg>
 
-          <button className="bg-white cursor-pointer text-[#6c63ff] mt-6 md:mt-10 font-bold p-[25px] rounded-full shadow hover:bg-[#6c63ff] hover:text-white transition-all duration-300 text-base animate-scale-in animate-delay-2 hover-lift hover-glow animate-pulse-slow group relative overflow-hidden">
+          <button onClick={handleGmailClick} className="bg-white cursor-pointer text-[#6c63ff] mt-6 md:mt-10 font-bold py-[15px] px-[30px] rounded-full shadow hover:bg-[#6c63ff] hover:text-white transition-all duration-300 text-base animate-scale-in animate-delay-2 hover-lift hover-glow animate-pulse-slow group relative overflow-hidden">
             <span className="relative z-10 font-[Anton] text-[20px] font-medium group-hover:scale-110 transition-transform duration-300">
               HIRE ME NOW
             </span>

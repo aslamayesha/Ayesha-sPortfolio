@@ -20,7 +20,7 @@ export default function Header() {
         <div className="text-white text-[40px] font-medium font-[Anton] tracking-widest">AYESHA</div>
         <nav>
           <ul className="flex space-x-8 text-white text-[16px] uppercase tracking-wider font-medium font-[Anton]">
-            <li>
+            {/* <li>
               <a 
                 href="#contact" 
                 className="hover:text-[#6c63ff] transition-colors cursor-pointer"
@@ -28,7 +28,7 @@ export default function Header() {
               >
                 Contact
               </a>
-            </li>
+            </li> */}
             <li>
               <a 
                 href="#project" 
@@ -56,7 +56,7 @@ export default function Header() {
                 About
               </a>
             </li>
-            <li>
+            {/* <li>
               <a 
                 href="#menu" 
                 className="hover:text-[#6c63ff] transition-colors cursor-pointer"
@@ -64,7 +64,7 @@ export default function Header() {
               >
                 Menu
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

@@ -60,16 +60,17 @@ export default function StickyProfile() {
             </svg>
             {/* Content centered in the bubble */}
             <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-2">
-              <div className="text-[#6f64f3] font-bold text-[10px] animate-pulse-slow bg-gradient-to-r from-[#6f64f3] to-[#6155E1] bg-clip-text text-transparent">Hey, I&apos;m</div>
-              <div className="text-white font-bold text-xs animate-fade-in animate-delay-4">AYESHA</div>
-              <div className="text-gray-200 font-semibold text-[10px] animate-fade-in animate-delay-5">your GO TO creative developer</div>
-              <div className="text-gray-400 text-[9px] animate-fade-in animate-delay-6 italic">welcome to my personal portfolio</div>
+              <div className="text-[#6f64f3] font-medium text-[12px] animate-pulse-slow bg-gradient-to-r from-[#6f64f3] to-[#6155E1] bg-clip-text text-transparent">Hey, I&apos;m</div>
+              <div className="text-white font-semibold text-[13px] animate-fade-in animate-delay-4">AYESHA</div>
+              {/* <div className="text-gray-200 font-semibold text-[10px] animate-fade-in animate-delay-5">your GO TO creative developer</div>
+              <div className="text-gray-400 text-[9px] animate-fade-in animate-delay-6 italic">welcome to my personal portfolio</div> */}
+              <div onClick={resumeClick} className="text-white cursor-pointer hover:underline font-semibold text-[13px] animate-pulse-slow bg-gradient-to-r from-[#6f64f3] to-[#6155E1] bg-clip-text text-transparent">Download my Resume</div>
             </div>
           </div>
         </div>
       )}
       {/* Sticky profile image */}
-      <div onClick={resumeClick} className="relative cursor-pointer group">
+      <div className="relative cursor-pointer group">
         <Image
           src="/Ayesha.png"
           alt="Ayesha profile"
