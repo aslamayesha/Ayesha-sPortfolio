@@ -34,7 +34,7 @@ export default function ServicesSection() {
     >
       {/* Decorative Background Text */}
       <div
-        className="absolute inset-0 leading-[1] mb-3 flex items-end  md:ml-[-27%] sm:ml-[-10%] lg:ml-[-53%] justify-center md:opacity-70 lg:opacity-70 sm:opacity-10 text-[288px] font-medium  whitespace-nowrap text-transparent [-webkit-text-stroke:1px_#ffffff]"
+        className="absolute inset-0 leading-[1] mb-3 px-4 md:px-10 lg:px-23 flex items-end  md:opacity-70 lg:opacity-70 sm:opacity-10 md:text-[288px] text-[165px] md:font-medium font-light whitespace-nowrap text-transparent [-webkit-text-stroke:1px_#ffffff]"
         style={{ fontFamily: "Anton, sans-serif" }}
       >
         SER<br/>VICES
@@ -68,13 +68,13 @@ export default function ServicesSection() {
         </svg>
       </div>
 
-      <div className="container mt-[-40px]  px-8 grid md:grid-cols-2 gap-120  items-center relative z-10">
+      <div className="container md:mt-[-40px] mt-[0px]  md:px-8 px-4 grid md:grid-cols-2 xl:gap-120 gap-0  items-center relative z-10">
         {/* Left Column */}
-        <p className="text-white h-[98%] font-[Anton] text-[60px] uppercase mb-4 animate-fade-in animate-delay-1 ">
+        <p className="text-white h-[98%] font-[Anton] text-[50px] md:text-[80px] uppercase mb-1 md:mb-4 animate-fade-in animate-delay-1 ">
           Services
         </p>
         <div className="md:col-start-2 animate-slide-in-right">
-          <p className="text-white font-sans text-[16px] font-light text-opacity- max-w-lg mb-12 animate-fade-in animate-delay-2">
+          <p className="text-white font-sans text-[14px] md:text-[16px] font-light text-opacity- max-w-lg md:mb-12 mb-8 animate-fade-in animate-delay-2">
             Web development tools are often available as browser add-ons or
             integrated features within popular web browsers. Leading browsers
             like Google Chrome, Firefox, Safari, Microsoft Edge, and Opera come
@@ -92,12 +92,12 @@ export default function ServicesSection() {
             </div> */}
         </div>
       </div>
-      <div className="relative overflow-x-hidden">
+      <div className="relative overflow-x-hidden md:mt-10 xl:mt-0 ">
       <div className="flex w-max animate-skills-slider gap-6 md:gap-8 lg:gap-12">
       {sliderSkills.map((skill, idx) => (
               <div
                 key={idx + skill.name}
-                className="bg-[#1a1a2e] rounded-xl p-6 flex flex-col items-center shadow-lg hover-lift animate-fade-in min-w-[140px] md:min-w-[180px]"
+                className="bg-[#1a1a2e] rounded-xl p-3 md:p-6 flex flex-col items-center shadow-lg hover-lift animate-fade-in min-w-[140px] md:min-w-[180px]"
                 style={{ animationDelay: `${(idx % skills.length + 1) * 0.08}s` }}
               >
                 <div className="text-4xl md:text-5xl mb-4 animate-pulse-slow">{skill.icon}</div>
