@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-[#0a0a0a] w-full h-full flex items-center md:mt-0 mt-[50px]">
+    <section className="bg-[#0a0a0a] w-full h-full flex items-center md:mt-0 mt-[50px]">
       <div className="container mx-auto px-4 lg:px-8 flex flex-col xl:flex-row items-center justify-between xl:gap-16 gap-4">
         {/* Left Column */}
         <div className="flex-1 md:w-[100%] md:pl-3 lg:pl-0 animate-slide-in-left lg:mt-[60px] xl:mt-0 ">
