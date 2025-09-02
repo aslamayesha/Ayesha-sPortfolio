@@ -1,11 +1,15 @@
+import StatItem from "../StatItem";
+
 export default function SectionAbout() {
+
   return (
-    <div>
-         <div className="flex-1 ml-27 animate-slide-in-left ">
+    <div className="mt-[70px]">
+        <div className="flex justify-between">
+         <div className="flex flex-col ml-27 animate-slide-in-left ">
           {/* <p className="text-[#62606F] font-[Anton] text-[50px] md:text-[80px] lg:text-[70px] xl:text-[80px] uppercase mb-0 md:mb-4 lg:mb-0 xl:mb-4 animate-fade-in animate-delay-1 hover-glow">About</p> */}
           <p className="text-white font-[Anton] text-[30px] sm:text-[35px] xl:text-[40px] uppercase font-medium  animate-fade-in animate-delay-2 hover-scale">Code Meets Creativity</p>
           <h2
-            className="text-white text-[40px] sm:text-[50px] xl:text-[80px] leading-[1.1] uppercase font-medium mb-6 animate-fade-in animate-delay-3 hover-glow"
+            className="text-white w-2xl text-[40px] sm:text-[50px] xl:text-[80px] leading-[1.1] uppercase font-medium mb-6 animate-fade-in animate-delay-3 hover-glow"
             style={{ fontFamily: 'Anton, sans-serif' }}
           >
             A Developer Who <br />
@@ -18,6 +22,10 @@ export default function SectionAbout() {
             can&apos;t design. Or can they? And more importantly, should they?
           </p>
         </div>
+        <div className="mr-35 mt-[50px] flex flex-col gap-10">
+            <StatItem />
+          </div>
+          </div>
     </div>
   );
 }
