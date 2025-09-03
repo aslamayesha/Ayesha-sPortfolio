@@ -118,7 +118,7 @@ export default function ProjectsSection({ showTitle = true }: Heading) {
     <section  className="bg-[#0a0a0a] w-full h-full flex items-center md:mt-0 ">
       <div className="container mx-auto px-4 md:px-8 lg:px-8 mt-[70px]">
         {showTitle && (
-          <h2 className="text-white font-anton text-[clamp(2rem,6vw,4rem)] leading-tight uppercase font-extrabold mb-6 animate-fade-in hover-glow"
+          <h2 className="text-white font-anton text-[50px] md:text-[80px] leading-tight uppercase font-extrabold mb-6 animate-fade-in hover-glow"
           style={{ fontFamily: 'Anton, sans-serif' }}
           >
             <span className="animate-pulse-slow">Featured</span> Projects

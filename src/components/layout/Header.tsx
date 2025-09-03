@@ -38,10 +38,10 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full py-6 backdrop-blur-md shadow-lg">
       <div className="container mx-auto md:px-8 px-4 flex items-center justify-between">
         <Link href="/"> 
-        <div className="text-white text-[40px] font-medium font-anton tracking-widest">AYESHA</div>
+        <div className="text-white md:text-[40px] text-[30px] font-medium font-anton tracking-widest">AYESHA</div>
         </Link>
         <nav>
-          <ul className="flex md:space-x-8 space-x-4 text-white text-[16px] uppercase tracking-wider font-medium font-anton">
+          <ul className="flex md:space-x-8 space-x-4 text-white md:text-[16px] text-[14px] uppercase tracking-wider font-medium font-anton">
             {/* <li>
               <a 
                 href="#contact" 
