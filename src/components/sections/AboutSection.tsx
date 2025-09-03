@@ -3,10 +3,10 @@ import Image from 'next/image';
 export default function AboutSection() {
   return (
     <section id="about" className="bg-[#0a0a0a] w-full h-full flex items-center">
-      <div className="container mx-auto px-4 md:px-8 lg:px-24 flex flex-col md:flex-row items-center justify-between gap-16">
+      <div className="container mx-auto px-4 md:px-8 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-16">
         {/* Left Column */}
         <div className="flex-1 animate-slide-in-left">
-          <p className="text-[#62606F] font-[Anton] text-[40px] uppercase mb-4 animate-fade-in animate-delay-1 hover-glow">About</p>
+          <p className="text-[#62606F] font-[Anton] text-[60px] uppercase mb-4 animate-fade-in animate-delay-1 hover-glow">About</p>
           <p className="text-white font-[Anton] text-[40px] uppercase font-medium  animate-fade-in animate-delay-2 hover-scale">Code Meets Creativity</p>
           <h2
             className="text-white text-[80px] leading-[1.1] uppercase font-medium mb-6 animate-fade-in animate-delay-3 hover-glow"
@@ -15,7 +15,7 @@ export default function AboutSection() {
             A Developer Who <br />
             <span className="animate-pulse-slow">Designs With Vision.</span>
           </h2>
-          <p className="text-[#FFFFFF] max-w-md animate-fade-in animate-delay-4 hover-lift font-[Manrope] text-[16px] font-medium">
+          <p className="text-[#FFFFFF] max-w-md animate-fade-in animate-delay-4 hover-lift font-sans text-[16px] font-light">
             I&apos;m a developer who thrives on coding and problem-solving. There&apos;s nothing more
             fulfilling than creating software—it&apos;s where I feel truly alive. So, what made me take
             on the unexpected challenge of learning design? We&apos;ve all heard it before—developers
