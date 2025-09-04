@@ -66,10 +66,14 @@ export default function Footer() {
   return (
     <footer className="bg-transparent py-12">
       <div className="container mx-auto px-8">
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="border-t border-gray-800 md:pt-8 pt-4 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
           <p className="text-gray-500 text-sm text-center md:text-left">
             &copy; {new Date().getFullYear()} AYESHA. All rights reserved.
           </p>
+          <p className='text-gray-500 text-sm text-center md:text-left'><b>Phone No.</b>  +923034173632</p>
+          </div>
+          
           <div className="flex items-center gap-6">
             <a
               href="https://github.com/aslamayesha"
@@ -92,7 +96,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <p className='text-gray-500 text-sm text-center md:text-left'><b>Phone No.</b>  +923034173632</p>
+        
       </div>
     </footer>
   );

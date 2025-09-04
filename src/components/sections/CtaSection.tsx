@@ -9,9 +9,9 @@ export default function CtaSection() {
   }
   return (
     <section id="cta" className="bg-[#0a0a0a]  w-full h-full flex items-center">
-      <div className="container mx-auto px-8 text-center">
+      <div className="container mx-auto md:px-8 px-4 text-center">
         <div className="flex sm:text-left justify-between items-center">
-          <h1 className="text-white font-[Anton] text-[144px] font-medium uppercase leading-[1]">
+          <h1 className="text-white font-[Anton] text-[60px] md:text-[100px] lg:text-[144px] font-medium uppercase leading-[1.1] md:leading-[1]">
             Let's start a <br />
             <span className="text-[#6155E1] flex items-center justify-between">
               project{" "}
@@ -20,11 +20,11 @@ export default function CtaSection() {
           </h1>
         </div>
 
-        <div className="flex sm:w-full lg:w-full justify-between p-[30px] items-center w-[70%] h-[170px] mt-[40px] rounded-[30px] bg-[#6155E1]">
-          <h1 className="text-white sm:text-[40px] sm:whitespace-nowrap text-left font-[Anton] text-[40px] font-medium uppercase leading-[1.1]">
+        <div className="flex w-full  justify-between md:p-[30px] p-[15px] items-center  md:h-[170px] h-[100px] mt-[40px] rounded-[30px] bg-[#6155E1]">
+          <h1 className="text-white text-[16px] md:text-[35px] lg:text-[40px]  whitespace-nowrap text-left font-[Anton]  font-medium uppercase md:leading-[1.1] leading-[1.2]">
             ready to chat over coffee and <br /> turn ideas into action
           </h1>
-          <button onClick={handleGmailClick} className="bg-white sm:whitespace-nowrap font-[Anton] text-[20px] cursor-pointer text-[#6155E1] font-medium py-3 px-8 sm:px-6 rounded-full shadow-lg hover:bg-gray-200 transition-colors animate-scale-in animate-delay-3 hover-lift">
+          <button onClick={handleGmailClick} className="bg-white whitespace-nowrap font-[Anton] md:text-[20px] text-[13px] cursor-pointer text-[#6155E1] font-medium md:py-3 md:px-8 px-3 py-2 rounded-full shadow-lg hover:bg-gray-200 transition-colors animate-scale-in animate-delay-3 hover-lift">
             HIRE ME NOW
           </button>
         </div>
