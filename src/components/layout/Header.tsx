@@ -7,16 +7,16 @@ import React from 'react';
 export default function Header() {
   const pathname = usePathname();
   
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
+  // const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+  //   e.preventDefault();
+  //   const element = document.getElementById(sectionId);
+  //   if (element) {
+  //     element.scrollIntoView({ 
+  //       behavior: 'smooth',
+  //       block: 'start'
+  //     });
+  //   }
+  // };
 
   const isActive = (path: string) => {
     if (path === '/projects') {

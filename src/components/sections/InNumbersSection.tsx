@@ -15,7 +15,7 @@ export default function InNumbersSection() {
             In Numbers
           </h2>
           <p className="text-white  text-left max-w-2xl mb-12 animate-fade-in animate-delay-1 font-sans text-[14px] md:text-[17px] font-light">
-          Project completion begins with turning ideas into actionable plans. It's about taking a concept and breaking it down into manageable tasks, setting clear goals and timelines. Throughout the process, staying focused and adaptable ensures that obstacles can be overcome, and new insights can be applied. Effective collaboration, careful planning, 
+          Project completion begins with turning ideas into actionable plans. It&apos;s about taking a concept and breaking it down into manageable tasks, setting clear goals and timelines. Throughout the process, staying focused and adaptable ensures that obstacles can be overcome, and new insights can be applied. Effective collaboration, careful planning, 
           </p>
           </div>
 

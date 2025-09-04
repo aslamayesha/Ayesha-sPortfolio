@@ -12,9 +12,9 @@ export default function CtaSection() {
       <div className="container mx-auto md:px-8 px-4 text-center">
         <div className="flex sm:text-left justify-between items-center">
           <h1 className="text-white font-[Anton] text-[60px] md:text-[100px] lg:text-[144px] font-medium uppercase leading-[1.1] md:leading-[1]">
-            Let's start a <br />
+            Let&apos;s start a <br />
             <span className="text-[#6155E1] flex items-center justify-between">
-              project{" "}
+              project
               <Image src="/star.svg" alt="cta-image" width={61} height={61} />
             </span>
           </h1>
