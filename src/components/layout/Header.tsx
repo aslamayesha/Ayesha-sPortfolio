@@ -1,8 +1,12 @@
 'use client';
 
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 export default function Header() {
+  const pathname = usePathname();
+  
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     const element = document.getElementById(sectionId);
@@ -14,12 +18,30 @@ export default function Header() {
     }
   };
 
+  const isActive = (path: string) => {
+    if (path === '/projects') {
+      return pathname === '/projects';
+    } 
+    if (path === '/about') {
+      return pathname === '/about';
+    }
+    if (path === '/services') {
+      return pathname === '/services';
+    }
+    if (path === '/contact') {
+      return pathname === '/contact';
+    }
+    return false;
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full py-6 backdrop-blur-md shadow-lg">
       <div className="container mx-auto md:px-8 px-4 flex items-center justify-between">
-        <div className="text-white text-[40px] font-medium font-[Anton] tracking-widest">AYESHA</div>
+        <Link href="/"> 
+        <div className="text-white text-[40px] font-medium font-anton tracking-widest">AYESHA</div>
+        </Link>
         <nav>
-          <ul className="flex md:space-x-8 space-x-4 text-white text-[16px] uppercase tracking-wider font-medium font-[Anton]">
+          <ul className="flex md:space-x-8 space-x-4 text-white text-[16px] uppercase tracking-wider font-medium font-anton">
             {/* <li>
               <a 
                 href="#contact" 
@@ -30,31 +52,55 @@ export default function Header() {
               </a>
             </li> */}
             <li>
-              <a 
-                href="#project" 
-                className="hover:text-[#6c63ff] transition-colors cursor-pointer"
-                onClick={(e) => handleNavClick(e, 'project')}
+              <Link 
+                href="/projects" 
+                className={`transition-colors cursor-pointer ${
+                  isActive('/projects') 
+                    ? 'text-[#6c63ff] font-bold' 
+                    : 'text-white hover:text-[#6c63ff]'
+                }`}
               >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#services" 
-                className="hover:text-[#6c63ff] transition-colors cursor-pointer"
-                onClick={(e) => handleNavClick(e, 'services')}
+              <Link 
+                href="/services" 
+                className={`transition-colors cursor-pointer ${
+                  isActive('/services') 
+                    ? 'text-[#6c63ff] font-bold' 
+                    : 'text-white hover:text-[#6c63ff]'
+                }`}
+                // onClick={(e) => handleNavClick(e, 'services')}
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#about" 
-                className="hover:text-[#6c63ff] transition-colors cursor-pointer"
-                onClick={(e) => handleNavClick(e, 'about')}
+              <Link 
+                href="/about" 
+                className={`transition-colors cursor-pointer ${
+                  isActive('/about') 
+                    ? 'text-[#6c63ff] font-bold' 
+                    : 'text-white hover:text-[#6c63ff]'
+                }`}
+                // onClick={(e) => handleNavClick(e, 'about')}
               >
                 About
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/contact" 
+                className={`transition-colors cursor-pointer ${
+                  isActive('/contact') 
+                    ? 'text-[#6c63ff] font-bold' 
+                    : 'text-white hover:text-[#6c63ff]'
+                }`}
+                // onClick={(e) => handleNavClick(e, 'about')}
+              >
+                Contact
+              </Link>
             </li>
             {/* <li>
               <a 

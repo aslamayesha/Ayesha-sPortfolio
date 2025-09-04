@@ -29,7 +29,7 @@ export default function ServicesSection() {
   const sliderSkills = [...skills, ...skills];
   return (
     <section
-      id="services"
+      // id="services"
       className="bg-[#6155E1] w-full h-full flex flex-col gap-15 items-center relative overflow-hidden"
     >
       {/* Decorative Background Text */}

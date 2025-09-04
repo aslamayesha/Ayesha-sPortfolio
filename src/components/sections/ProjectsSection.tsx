@@ -104,20 +104,26 @@ const NextButton = ({ onClick }: { onClick: () => void }) => (
   </button>
 );
 
-export default function ProjectsSection() {
+interface Heading {
+  showTitle?: boolean;
+}
+
+export default function ProjectsSection({ showTitle = true }: Heading) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
 
   const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
   return (
-    <section id="project" className="bg-[#0a0a0a] w-full h-full flex items-center md:mt-0 ">
+    <section  className="bg-[#0a0a0a] w-full h-full flex items-center md:mt-0 ">
       <div className="container mx-auto px-4 md:px-8 lg:px-8 mt-[70px]">
-        <h2 className="text-white font-anton text-[clamp(2rem,6vw,4rem)] leading-tight uppercase font-extrabold mb-6 animate-fade-in hover-glow"
-        style={{ fontFamily: 'Anton, sans-serif' }}
-        >
-          <span className="animate-pulse-slow">Featured</span> Projects
-        </h2>
+        {showTitle && (
+          <h2 className="text-white font-anton text-[clamp(2rem,6vw,4rem)] leading-tight uppercase font-extrabold mb-6 animate-fade-in hover-glow"
+          style={{ fontFamily: 'Anton, sans-serif' }}
+          >
+            <span className="animate-pulse-slow">Featured</span> Projects
+          </h2>
+        )}
         {/* <p className="text-gray-400 text-left max-w-2xl mb-12 animate-fade-in animate-delay-1 hover-lift">
           Here are some of the projects I am most proud of. Each one was a unique challenge that
           helped me grow as a developer.
