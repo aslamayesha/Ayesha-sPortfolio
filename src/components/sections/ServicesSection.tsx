@@ -10,23 +10,23 @@ const ServiceItem = ({ children }: { children: React.ReactNode }) => (
 );
 
 const skills = [
-  { name: 'HTML5', icon: '🌐' },
-  { name: 'CSS3', icon: '🎨' },
+  // { name: 'HTML5', icon: '🌐' },
+  // { name: 'CSS3', icon: '🎨' },
   { name: 'JavaScript', icon: '✨' },
   { name: 'TypeScript', icon: '🔷' },
   { name: 'React', icon: '⚛️' },
   { name: 'Next.js', icon: '⏭️' },
-  { name: 'Tailwind CSS', icon: '💨' },
-  { name: 'Framer Motion', icon: '🎞️' },
-  { name: 'Git', icon: '🔗' },
-  { name: 'Figma', icon: '🎨' },
-  { name: 'Responsive Design', icon: '📱' },
-  { name: 'UI/UX', icon: '🖌️' },
+  // { name: 'Tailwind CSS', icon: '💨' },
+  // { name: 'Framer Motion', icon: '🎞️' },
+  { name: 'NodeJs', icon: '🔗' },
+  // { name: 'Figma', icon: '🎨' },
+  // { name: 'Responsive Design', icon: '📱' },
+  // { name: 'UI/UX', icon: '🖌️' },
 ];
 
 
 export default function ServicesSection() {
-  const sliderSkills = [...skills, ...skills];
+  const sliderSkills = [...skills];
   return (
     <section
       // id="services"
@@ -70,9 +70,9 @@ export default function ServicesSection() {
 
       <div className="container md:mt-[-40px] mt-[0px]  md:px-8 px-4 grid md:grid-cols-2 xl:gap-120 gap-0  items-center relative z-10">
         {/* Left Column */}
-        <p className="text-white h-[98%] font-[Anton] text-[50px] md:text-[80px] uppercase mb-1 md:mb-4 animate-fade-in animate-delay-1 ">
+        <h1 className="text-white animate-pulse-slow h-full font-[Anton] font-extrabold text-[50px] md:text-[80px] uppercase mb-1 md:mb-12 animate-fade-in animate-delay-1 ">
           Services
-        </p>
+        </h1>
         <div className="md:col-start-2 animate-slide-in-right">
           <p className="text-white font-sans text-[14px] md:text-[16px] font-light text-opacity- max-w-lg md:mb-12 mb-8 animate-fade-in animate-delay-2">
             Web development tools are often available as browser add-ons or
@@ -84,6 +84,23 @@ export default function ServicesSection() {
               <ServiceItem>Web Development</ServiceItem>
               <ServiceItem>App Design</ServiceItem>
               <ServiceItem>Brand Identity</ServiceItem>
+
+            </div>
+            <div className="relative flex-wrap mt-10 md:mt-10 xl:mt-10 ">
+      <div className="flex lg:w-max md:w-full w-full flex-wrap gap-6 ">
+      {sliderSkills.map((skill, idx) => (
+              <div
+                key={idx }
+                className=" flex flex-col items-center  "
+                // style={{ animationDelay: `${(idx % skills.length + 1) * 0.08}s` }}
+              >
+                <div className="text-4xl md:text-5xl mb-4 ">{skill.icon}</div>
+                <div className="text-white text-base md:text-lg font-semibold text-center ">
+                  {skill.name}
+                </div>
+              </div>
+            ))}
+            </div>
             </div>
             {/* <div className="flex items-center justify-center">
               <button className=" bg-white cursor-pointer font-[Anton] font-medium text-[20px] text-[#6155E1]  p-[25px] rounded-[64px] shadow-lg hover:bg-gray-200 transition-colors animate-scale-in animate-delay-3 hover-lift">
@@ -92,23 +109,8 @@ export default function ServicesSection() {
             </div> */}
         </div>
       </div>
-      <div className="relative overflow-x-hidden md:mt-10 xl:mt-0 ">
-      <div className="flex w-max animate-skills-slider gap-6 md:gap-8 lg:gap-12">
-      {sliderSkills.map((skill, idx) => (
-              <div
-                key={idx + skill.name}
-                className="bg-[#1a1a2e] rounded-xl p-3 md:p-6 flex flex-col items-center shadow-lg hover-lift animate-fade-in min-w-[140px] md:min-w-[180px]"
-                style={{ animationDelay: `${(idx % skills.length + 1) * 0.08}s` }}
-              >
-                <div className="text-4xl md:text-5xl mb-4 animate-pulse-slow">{skill.icon}</div>
-                <div className="text-white text-base md:text-lg font-semibold text-center tracking-wide">
-                  {skill.name}
-                </div>
-              </div>
-            ))}
-            </div>
-            </div>
-            <style jsx global>{`
+   
+            {/* <style jsx global>{`
           @keyframes skills-slider {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -116,7 +118,7 @@ export default function ServicesSection() {
           .animate-skills-slider {
             animation: skills-slider 24s linear infinite;
           }
-        `}</style>
+        `}</style> */}
     </section>
   );
 }
