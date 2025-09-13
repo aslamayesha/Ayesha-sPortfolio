@@ -9,7 +9,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className=" w-full h-full sm:h-[110vh] flex items-center">
+    <section className=" w-full h-full sm:h-[110vh] flex items-center bg-[#020015]">
       <div className="container px-4 md:px-0 lg:px-8 mx-auto min-h-[60vh] flex flex-col xl:flex-row items-center xl:items-start justify-center md:justify-between gap-8 md:gap-0">
         {/* Mobile: Image and description first, then h1 */}
         <div className="flex-1 flex flex-col items-center md:items-end justify-center md:justify-start mt-8 md:mt-0 order-1 xl:order-2">

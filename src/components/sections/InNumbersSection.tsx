@@ -4,7 +4,7 @@ import StatItem from '../StatItem';
 
 export default function InNumbersSection() {
   return (
-    <section id="in-numbers" className="bg-[#0a0a0a] w-full h-full flex items-center">
+    <section id="in-numbers" className="bg-[#020015] w-full h-full flex items-center">
       <div className="container mx-auto md:px-8 px-4">
         <div className="border-t border-gray-700 pt-16">
           <div className='flex flex-col lg:flex-row justify-between'>
