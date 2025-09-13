@@ -8,7 +8,7 @@ export default function CtaSection() {
     );
   }
   return (
-    <section id="cta" className="bg-[#0a0a0a]  w-full h-full flex items-center">
+    <section id="cta" className="bg-[#020015]  w-full h-full flex items-center">
       <div className="container mx-auto md:px-8 px-4 text-center">
         <div className="flex sm:text-left justify-between items-center">
           <h1 className="text-white font-[Anton] text-[60px] md:text-[100px] lg:text-[144px] font-medium uppercase leading-[1.1] md:leading-[1]">
